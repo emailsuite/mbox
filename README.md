@@ -2,6 +2,9 @@
 Work with various MBOX file formats
 
 ## mboxo
+```regex
+From [\w\-\.]+@[\w\-\.]+ [a-z0-9]+
+```
 An original mbox format originated with Unix System V. Messages are stored in a single file, with each message beginning with a line containing “From SENDER DATE”. If “From ” (case-sensitive, with the space) occurs at the beginning of a line anywhere in the email, it is escaped with a greater-than sign (to “>From “). Lines already quoted as such, for example “>From ” or “>>>From ” are not quoted again, which leads to irrecoverable corruption of the message content.
 
 ## mboxrd
